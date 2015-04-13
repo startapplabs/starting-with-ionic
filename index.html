@@ -41,11 +41,10 @@
         </section>
 
 
-        <section>
+        <!-- <section>
           <img src="img/agustin.jpg" style="position: absolute; top:0; left:0; max-width: 260px; max-height: 260px; border-radius: 30px">
           <ul style="position: absolute; top:0; left:300px;">
             <li>Agustin Haller</li>
-            <li>Short bio</li>
             <li>Montevideo, Uruguay</li>
             <li><a href="https://twitter.com/agustinhaller">@agustinhaller</a></li>
             <li><a href="https://github.com/agustinhaller">github.com/agustinhaller</a></li>
@@ -56,12 +55,11 @@
           <img src="img/dayana.jpg" style="position: absolute; top:0; left:0; max-width: 260px; max-height: 260px; border-radius: 30px">
           <ul style="position: absolute; top:0; left:300px;">
             <li>Dayana Jabif</li>
-            <li>Short bio</li>
             <li>Montevideo, Uruguay</li>
             <li><a href="https://twitter.com/agustinhaller">@dayujabif</a></li>
             <li><a href="https://github.com/agustinhaller">github.com/djabif</a></li>
           </ul>
-        </section>
+        </section> -->
 
 
         <section>
@@ -135,7 +133,7 @@
           <!--
           //////////////////////////
           NOTAS
-          - Apache Cordova es un framework para el desarrollo de aplicaciones hibridas con un conjunto de APIs que te dan acceso a funciones del dispositivo tales como la cámara, el acelerómetro, etc. Lo cual nos permite crear aplicaciones para distintas de plataformas utilizando herramientas web como JavaScript, HTML5 y CSS3.      
+          - Apache Cordova es un framework para el desarrollo de aplicaciones hibridas con un conjunto de APIs que te dan acceso a funciones del dispositivo tales como la cámara, el acelerómetro, etc. Lo cual nos permite crear aplicaciones para distintas de plataformas utilizando herramientas web como JavaScript, HTML5 y CSS3.
           //////////////////////////
         -->
           <img src="img/cordova.png" class="logo" style="margin-bottom: 0;">
@@ -629,8 +627,146 @@ $ionicModal.fromTemplateUrl('modal.html', {
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Mostrar lo que vamos a construir (sin mucho detalle)
+
+          //////////////////////////
+        -->
           <h2><strong>Demo Time!</strong></h2>
-          <h6 class="light-text">May the demo gods be with us ;)</h6>
+          <h6 class="light-text">App de JSConfUY</h6>
+        </section>
+
+        <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - El primer paso es inicializar el proyecto, para esto vamos a utilizar el CLI de Ionic que es una de las ventajas de desarrollar hibrido con Ionic y nos ayuda a agilizar y facilitar este proceso.
+          -
+
+          //////////////////////////
+        -->
+          <h2>Inicializar el proyecto</h2>
+          <pre class="ionic-blue">
+            <code class="fragment">$ ionic start myapp sidemenu</code>
+            <code class="fragment">$ cd myapp</code>
+            <code class="fragment">$ ionic serve</code>
+          </pre>
+
+        </section>
+
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - Mostrar que hay en las carpetas que te crea Ionic
+          //////////////////////////  -->
+          <h2>Estructura</h2>
+        </section>
+
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - Mostrar la navegacion de la app, que contenido va a tener
+          - Como dijimos antes, Ionic esta muy integrado con Angular, para la navegacion vamos a seguir las recomendaciones de Ionic y vamos a usar Angular UI route
+          - Ir a atom y mostrar el app.js
+          //////////////////////////  -->
+          <h2>Diagrama de navegación</h2>
+        </section>
+
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - Mostrar los componentes UI de Ionic que usamos para esta view
+          - Alternar entre Atom y las slides para mostrar como es la estructura en Codigo.
+          //////////////////////////  -->
+          <h2>Layout Speakers</h2>
+        </section>
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - Mostrar los componentes UI de Ionic que usamos para esta view
+          - Alternar entre Atom y las slides para mostrar como es la estructura en Codigo.
+          //////////////////////////  -->
+          <h2>Layout Venue</h2>
+        </section>
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - Mostrar los componentes UI de Ionic que usamos para esta view
+          - Alternar entre Atom y las slides para mostrar como es la estructura en Codigo.
+          //////////////////////////  -->
+          <h2>Layout Agenda</h2>
+        </section>
+
+
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - El acceso a datos lo vamos a hacer de la misma forma que lo hariamos en una aplicacion Angular, ya sea atravez de $resource, $http, etc.
+          -En este caso la data la vamos a sacar de un json local pero perfectamente podriamos estar interactuando con nuestra API del backend.
+          - Mostrar en atom este codigo
+          //////////////////////////  -->
+          <h2>Acceso a datos</h2>
+        </section>
+
+        <!-- -Mostrar avance -->
+
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - Routing avanzado, back button
+          - Ahora vamos a agregar un poco mas de usabilidad a la app, por ej si estamos en la bio del speaker, a mi me interesa saber en que tiene experiencia y que charlas va a dar hoy, por eso decidimos agregar bla bla
+          //////////////////////////  -->
+          <h2>Mejorando la usabilidad</h2>
+        </section>
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - Cordova plugins (local notifications, get directions, share)
+          //////////////////////////  -->
+          <h2>Super poderes</h2>
+        </section>
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - mostrar como Ionic hace uso de Sass
+          - live reload integrado
+          - explicar como lo usamos nosotros
+          //////////////////////////  -->
+          <h2>Sass</h2>
+        </section>
+
+        <!-- -Show case final, mostrar todos los goodies de Ionic , swipe to back, back buttons, cordova plugins, -->
+
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - chrome console
+          - inspect devices
+          - ionic serve --lab
+          - autoreload
+          //////////////////////////  -->
+          <h2>Dev tips!</h2>
+        </section>
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - El CLI tambien nos posibilita compilar de manear facil para varias plataformas
+          - $ionic build ios
+          - $ionic build android
+          //////////////////////////  -->
+          <h2>Plataformas</h2>
+        </section>
+        <section>
+          <!-- //////////////////////////
+          NOTAS
+          - Ionic view app
+          - Ionic push notifications
+          - Ionic analitics
+          - etc
+          //////////////////////////  -->
+          <h2>Qué más nos da Ionic?</h2>
         </section>
 
 
