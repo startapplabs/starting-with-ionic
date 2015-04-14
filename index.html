@@ -5,11 +5,11 @@
     <!-- Presentation created using reveal.js: https://github.com/hakimel/reveal.js -->
     <!-- Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se -->
 
-    <title>Building Hybrid Apps with AngularJS and Ionic</title>
+    <title>Apps híbridas con AngularJS & Ionic</title>
 
-    <meta name="description" content="Ionic Framework Presentation: The beautiful, open source framework for developing hybrid mobile apps with HTML5.">
-    <meta name="author" content="https://twitter.com/adamdbradley">
-    <meta name="author" content="https://twitter.com/benjsperry">
+    <meta name="description" content="Ionic is rapidly gaining traction and is now the best option for creating hybrid mobile apps. Free and open source, Ionic offers a library of mobile-optimized HTML, CSS and JS components, gestures, and tools for building highly interactive apps. Built with Sass, Ionic utilizes AngularJS to provide the application structure, while Ionic itself focuses on the user interface. In other words, we see a match between the power of AngularJS and the beauty of Ionic UI. In this workshop we are going to see an overview of the capabilities of Ionic while creating an app to show you how to develop using this framework.">
+    <meta name="author" content="https://twitter.com/agustinhaller">
+    <meta name="author" content="https://twitter.com/dayujabif">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -34,10 +34,9 @@
 
       <div class="slides">
 
-
         <section>
           <img src="img/ionic-logo.png" class="logo" width="296" height="331">
-          <h4>Construyendo apps híbridas con AngularJS & Ionic</h4>
+          <h4>Apps híbridas con AngularJS & Ionic</h4>
         </section>
 
 
@@ -63,6 +62,14 @@
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Hoy vamos a ver que es y como construir una app mobile usando Ionic.
+          - La primera parte de la presentacion va a estar orientada en repasar lo que ofrece el framework
+          - Y la segunda enfocada en ver paso a paso como construir una app mobile usando Ionic
+          //////////////////////////
+          -->
           <h2>Agenda</h2>
           <ol>
             <li>Ionic Intro</li>
@@ -85,7 +92,7 @@
         <section>
           <!--
           //////////////////////////
-                    NOTAS
+          NOTAS
           - Las aplicaciones nativas son geniales y con estos argumentos no pretendemos desmerecerlas, lo que si queremos es transmitir nuestro punto de vista de porque en muchos casos la mejor opcion es una aplicacion hibrida.
           - Muchas veces necesitamos validar nuestro proyectos/ideas para saber si de verdad van a tener vuelo.
           - El mejor approach para este escenario es tener ciclos de desarrollo agiles, con un solo code base, con tencologias conocidas como HTML, JS y CSS
@@ -93,7 +100,7 @@
           - Si a eso le sumamos que en los ultimos años se ha avanzado mucho en la tecnologia y hardware de los celulares, en muchos casos la diferencia entre una app nativa y una app hibrida es imperceptible.
           - En definitiva la linea entre nativo e hibrido va a depender mucho de la naturaleza del proyecto.
           //////////////////////////
-        -->
+          -->
           <h2>Desventajas de las Apps Nativas</h2>
           <ul>
             <li>Experiencia requerida para cada plataforma</li>
@@ -107,9 +114,10 @@
           <!--
           //////////////////////////
           NOTAS
-          - Cuantas mas plataformas, mas problemas y mas recursos necesitamos
+          - Una realidad del desarrollo mobile es que cuantas mas plataformas, mas dolores de cabeza
+          - Ionic nos evita muchos de estos problemas y hace que nos enfoqueos en construir la app
           //////////////////////////
-        -->
+          -->
           <h3>Más plataformas, más problemas</h3>
           <p style="margin-top: 60px">
             <img src="img/apple.png" class="logo" width="200" height="200" style="margin-right: 10px">
@@ -528,17 +536,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
           </div>
         </section>
 
-        <!-- <section>
-          <h2>Ionic Creator</h2>
-          <img src="img/creator-preview.png" style="border:none;"/>
-        </section> -->
-
         <section>
-          <h2>Ionic View App</h2>
-          <img src="img/ionic-view-preview-right.png" style="border:none;box-shadow:none;background:none;"/>
-        </section>
-
-        <!-- <section>
 <pre class="ionic-blue"><code>
                           $ npm install -g ionic
 
@@ -550,17 +548,16 @@ $ionicModal.fromTemplateUrl('modal.html', {
                           |_|\___/|_| |_|_|\___|  CLI
 </code></pre>
           <ul>
-            <li>Quickly create a project with starter templates</li>
-            <li>Boilerplate app structure ready for customization</li>
-            <li>Preconfigured tools: Gulp, Sass, Bower, etc.</li>
-            <li>Start a local dev server with LiveReload</li>
-            <li>Update Ionic Framework library files</li>
-            <li>Build and run native apps</li>
+            <li>Inicializa el proyecto usando templates basicos</li>
+            <li>Crea estructura del proyecto</li>
+            <li>Herramientas preconfiguradas: Gulp, Sass, Bower, etc.</li>
+            <li>Servidor de desarrollo local con LiveReload</li>
+            <li>Build & run apps</li>
           </ul>
-        </section> -->
+        </section>
 
 
-        <section>
+        <!-- <section>
           <h2>Ionic CLI</h2>
 <pre class="ionic-blue">
 <code class="fragment">$ npm install -g ionic cordova</code>
@@ -568,7 +565,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
 <code class="fragment">$ cd myapp</code>
 <code class="fragment">$ ionic serve</code>
 </pre>
-        </section>
+        </section> -->
 
         <!-- <section>
           <h2><span style="text-decoration:line-through">Ionic</span> Angular Testing</h2>
@@ -600,23 +597,6 @@ $ionicModal.fromTemplateUrl('modal.html', {
           <h2><strong>COMMUNITY POWERED</strong></h2>
           <h6 class="light-text">Active developer forum, IRC and GitHub repo</h6>
         </section> -->
-
-
-        <section>
-          <h2>Empezando con Ionic!</h2>
-          <br />
-          <p><strong>Guía para comenzar</strong><br />
-          <a href="hhttp://ionicframework.com/getting-started/" target="_blank"><span class="light-text">ionicframework.com/getting-started</span></a></p>
-          <br />
-          <p><strong>Documentación</strong><br />
-            <a href="http://ionicframework.com/docs/" target="_blank"><span class="light-text">ionicframework.com/docs</span></a></p>
-          <br />
-          <p><strong>Foro de la comunidad</strong><br />
-          <a href="http://forum.ionicframework.com/" target="_blank"><span class="light-text">forum.ionicframework.com</span></a></p>
-          <br />
-          <p><strong>Contribuí en GitHub</strong><br />
-          <a href="https://github.com/driftyco/ionic" target="_blank"><span class="light-text">github.com/driftyco/ionic</span></a></p>
-        </section>
 
 
         <!-- <section>
@@ -767,6 +747,32 @@ $ionicModal.fromTemplateUrl('modal.html', {
           - etc
           //////////////////////////  -->
           <h2>Qué más nos da Ionic?</h2>
+        </section>
+
+        <!-- <section>
+          <h2>Ionic Creator</h2>
+          <img src="img/creator-preview.png" style="border:none;"/>
+        </section> -->
+
+        <section>
+          <h2>Ionic View App</h2>
+          <img src="img/ionic-view-preview-right.png" style="border:none;box-shadow:none;background:none;"/>
+        </section>
+
+        <section>
+          <h2>Mas recursos</h2>
+          <br />
+          <p><strong>Guía para comenzar</strong><br />
+          <a href="hhttp://ionicframework.com/getting-started/" target="_blank"><span class="light-text">ionicframework.com/getting-started</span></a></p>
+          <br />
+          <p><strong>Documentación</strong><br />
+            <a href="http://ionicframework.com/docs/" target="_blank"><span class="light-text">ionicframework.com/docs</span></a></p>
+          <br />
+          <p><strong>Foro de la comunidad</strong><br />
+          <a href="http://forum.ionicframework.com/" target="_blank"><span class="light-text">forum.ionicframework.com</span></a></p>
+          <br />
+          <p><strong>Contribuí en GitHub</strong><br />
+          <a href="https://github.com/driftyco/ionic" target="_blank"><span class="light-text">github.com/driftyco/ionic</span></a></p>
         </section>
 
 
