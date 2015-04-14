@@ -597,6 +597,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
           NOTAS
           - Mostrar la navegacion de la app, que contenido va a tener
           - Como dijimos antes, Ionic esta muy integrado con Angular, para la navegacion vamos a seguir las recomendaciones de Ionic y vamos a usar Angular UI route
+          - Vamos a agregar un poco mas de usabilidad a la app, por ej si estamos en la bio del speaker, a mi me interesa saber en que tiene experiencia y que charlas va a dar hoy, por eso decidimos agregar bla bla
           - Ir a atom y mostrar el app.js
           //////////////////////////  -->
           <h2>Navegación</h2>
@@ -664,7 +665,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
           //////////////////////////  -->
           <h2>Acceso a datos</h2>
           <ul>
-            <li>$resource o $http</li>
+            <li>$resource, $http</li>
             <li>Backend API, local json, BaaS (parse, firebase), etc</li>
           </ul>
         </section>
@@ -674,26 +675,28 @@ $ionicModal.fromTemplateUrl('modal.html', {
         <section>
           <!-- //////////////////////////
           NOTAS
-          - Routing avanzado, back button
-          - Ahora vamos a agregar un poco mas de usabilidad a la app, por ej si estamos en la bio del speaker, a mi me interesa saber en que tiene experiencia y que charlas va a dar hoy, por eso decidimos agregar bla bla
-          //////////////////////////  -->
-          <h2>Mejorando la usabilidad</h2>
-        </section>
-        <section>
-          <!-- //////////////////////////
-          NOTAS
           - Cordova plugins (local notifications, get directions, share)
           //////////////////////////  -->
           <h2>Super poderes</h2>
+          <ul>
+            <li>Get directions</li>
+            <li>Social share</li>
+            <li>Local notifications</li>
+          </ul>
         </section>
+
         <section>
           <!-- //////////////////////////
           NOTAS
-          - mostrar como Ionic hace uso de Sass
-          - live reload integrado
-          - explicar como lo usamos nosotros
+          - Mostrar como Ionic hace uso de Sass
+          - Live reload integrado
+          - Explicar como lo usamos nosotros
           //////////////////////////  -->
           <h2>Sass</h2>
+          <ul>
+            <li>Mixins</li>
+            <li>Variables</li>
+          </ul>
         </section>
 
         <!-- -Show case final, mostrar todos los goodies de Ionic , swipe to back, back buttons, cordova plugins, -->
@@ -707,7 +710,14 @@ $ionicModal.fromTemplateUrl('modal.html', {
           - autoreload
           //////////////////////////  -->
           <h2>Dev tips!</h2>
+          <ul>
+            <li>Chrome console</li>
+            <li>Remote debugging</li>
+            <li>Ionic live reload</li>
+            <li>Ionic comparison view</li>
+          </ul>
         </section>
+
         <section>
           <!-- //////////////////////////
           NOTAS
@@ -716,7 +726,24 @@ $ionicModal.fromTemplateUrl('modal.html', {
           - $ionic build android
           //////////////////////////  -->
           <h2>Plataformas</h2>
+          <ul>
+            <li>Android</li>
+            <li>
+              <ul>
+                <li>$ionic add platform android</li>
+                <li>$ionic build android</li>
+              </ul>
+            </li>
+            <li>iOS</li>
+            <li>
+              <ul>
+                <li>$ionic add platform ios</li>
+                <li>$ionic build ios</li>
+              </ul>
+            </li>
+          </ul>
         </section>
+
         <section>
           <!-- //////////////////////////
           NOTAS
@@ -726,16 +753,12 @@ $ionicModal.fromTemplateUrl('modal.html', {
           - etc
           //////////////////////////  -->
           <h2>Qué más nos da Ionic?</h2>
-        </section>
-
-        <!-- <section>
-          <h2>Ionic Creator</h2>
-          <img src="img/creator-preview.png" style="border:none;"/>
-        </section> -->
-
-        <section>
-          <h2>Ionic View App</h2>
-          <img src="img/ionic-view-preview-right.png" style="border:none;box-shadow:none;background:none;"/>
+          <ul>
+            <li>Ionic view</li>
+            <li>Ionic push</li>
+            <li>Ionic creator</li>
+            <li>Ionic analytics</li>
+          </ul>
         </section>
 
         <section>
@@ -753,10 +776,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
           <p><strong>Contribuí en GitHub</strong><br />
           <a href="https://github.com/driftyco/ionic" target="_blank"><span class="light-text">github.com/driftyco/ionic</span></a></p>
         </section>
-
-
       </div>
-
     </div>
 
     <script src="lib/js/head.min.js"></script>
