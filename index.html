@@ -112,8 +112,8 @@
           <!--
           //////////////////////////
           NOTAS
-          - Una realidad del desarrollo mobile es que cuantas mas plataformas, mas dolores de cabeza
-          - Ionic nos evita muchos de estos problemas y hace que nos enfoqueos en construir la app
+          - Una realidad del desarrollo nativo es que cuantas mas plataformas, mas dolores de cabeza vamos a tener (developers experientes, contatar mas gente, mas tiempo, etc.)
+          - Ionic nos evita muchos de estos problemas y hace que nos enfoquemos en construir la app
           ////////////////////////// -->
           <h3>Más plataformas, más problemas</h3>
           <p style="margin-top: 60px">
@@ -138,7 +138,8 @@
           <!--
           //////////////////////////
           NOTAS
-          - Apache Cordova es un framework para el desarrollo de aplicaciones hibridas con un conjunto de APIs que te dan acceso a funciones del dispositivo tales como la cámara, el acelerómetro, etc. Lo cual nos permite crear aplicaciones para distintas de plataformas utilizando herramientas web como JavaScript, HTML5 y CSS3.
+          - Si, hay una alternativa.
+          - Apache Cordova es un framework para el desarrollo de aplicaciones hibridas con un conjunto de APIs que te dan acceso a funcionalidades nativas del dispositivo tales como la cámara, el acelerómetro, etc. Lo cual nos permite crear aplicaciones para distintas plataformas utilizando herramientas web como JavaScript, HTML5 y CSS3.
           ////////////////////////// -->
           <img src="img/cordova.png" class="logo" style="margin-bottom: 0;">
           <ul>
@@ -169,6 +170,12 @@
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Ionic usa Angular.js
+          - Ionic a bajo nivel es un conjunto de servicios y directivas Angular
+          ////////////////////////// -->
           <img src="img/angular-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
           <h3>AngularJS FTW!</h3>
           <ul>
@@ -180,6 +187,11 @@
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - El enfoque con el que esta desarrollado Ionic es bastante similar al enfoque con el que estan desarrollados los SDKs Nativos.
+          ////////////////////////// -->
           <img src="img/native-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
           <h2>Enfoque Nativo</h2>
           <ul>
@@ -191,6 +203,13 @@
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Una de las cosas a resaltar de Ionic es que es muy performante
+          -
+          -
+          ////////////////////////// -->
           <img src="img/performance-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
           <h2>Alto rendimiento</h2>
             <ul>
@@ -202,19 +221,30 @@
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Ionic usa CSS comun y corriente para dar estilos a sus componentes
+          - En ionicframework.com/docs/components pueden encontrar todos los componentes de UI que tiene ionic
+          - Tambien usa Sass. Con sass define por ejemplo, variables para algunos colores que luego podes usar facilmente para tu app. Esto igual lo vamos a ver cuando hagamos la app.
+          ////////////////////////// -->
           <img src="img/design-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
           <h2>Diseño</h2>
           <ul>
             <li>Limpio, sencillo y funcional</li>
             <li>Usa CSS y SASS</li>
             <li>Variables - fácil de customizar</li>
-            <li><a href="http://ionicframework.com/docs/components/" target="_blank">ionicframework.com/docs/components</a></li>
           </ul>
         </section>
 
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Crearon una libreria con mas de 700 iconos que podemos usar en neustras apps.
+          ////////////////////////// -->
           <h2>Ionicons</h2>
           <img src="img/ionicons.png" class="logo" width="655" height="436">
           <p>Más de 700 íconos con licencia MIT</p>
@@ -223,6 +253,14 @@
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Primero esta el codigo de nuestra app, el que nosotros escribimos que usa los componenetes de Ionic
+          - Ionic usa AngularJS o nosotros mismos tambien podriamos usar angular, escribiendo nuestras propias directivas y servicios
+          - Todo esto esta actua encima de una webview utilizando cordova,
+          - cordova es quien nos da acceso a los componentes nativos del celular como por ejemplo sacar una foto, acceder a la galeria, etc. cordova es la que interactua con el sdk nativo.
+          ////////////////////////// -->
           <blockquote>
             &ldquo;Cómo se integra todo esto?&rdquo;
           </blockquote>
@@ -234,22 +272,13 @@
         </section>
 
 
-        <!-- <section>
-          <h2>Repercusión de Ionic</h2>
-          <ul>
-            <li>15,000+ estrellas en Github</li>
-            <li>Top 35 most starred Github repos</li>
-            <li>Consistently Top 10 trending JS Github repos</li>
-            <li>Ionic CLI averages 2,300 downloads/day</li>
-            <li>400,000+ Ionic apps have been started from our CLI</li>
-            <li>Released Alpha: November 2013</li>
-            <li>Released Beta: March 2014</li>
-            <li>Release Candidate: Winter 2015</li>
-          </ul>
-        </section> -->
-
-
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Ahora vamos a hacer una pasada rapida por los componentes de UI principales de Ionic
+
+          ////////////////////////// -->
           <blockquote>
             Componentes de UI
           </blockquote>
@@ -257,6 +286,12 @@
 
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Esto es como bootstrap, si usas las clases correctas todo va a quedar lindo
+          - Esta es una lista sencilla
+          ////////////////////////// -->
           <div class="col preview">
             <img src="img/list-example.png" class="logo" width="380" height="800">
           </div>
@@ -284,6 +319,12 @@
         </section>
 
         <section>
+          <!--
+          //////////////////////////
+          NOTAS
+          - Aca tenemos una lista mas compleja, con funcionalidades como ordenar, eliminar, editar. aca es donde entran las directivas de Ionic
+
+          ////////////////////////// -->
           <div class="col preview demo-frame">
             <iframe src="demos/list/index.html"></iframe>
           </div>
@@ -526,6 +567,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
         </section>
 
         <section>
+
 <pre class="ionic-blue"><code>
                           $ npm install -g ionic
 
