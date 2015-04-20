@@ -153,9 +153,9 @@
 
         <section>
           <img src="img/ionic-logo.png" class="logo" width="296" height="331">
-          <blockquote>
+          <!-- <blockquote>
             &ldquo;Hola&rdquo;
-          </blockquote>
+          </blockquote> -->
         </section>
 
 
@@ -579,7 +579,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
                           |_|\___/|_| |_|_|\___|  CLI
 </code></pre>
           <ul>
-            <li>Inicializa el proyecto usando templates basicos</li>
+            <li>Inicializa el proyecto usando templates básicos</li>
             <li>Crea estructura del proyecto</li>
             <li>Herramientas preconfiguradas: Gulp, Sass, Bower, etc.</li>
             <li>Servidor de desarrollo local con LiveReload</li>
@@ -607,8 +607,9 @@ $ionicModal.fromTemplateUrl('modal.html', {
           ////////////////////////// -->
           <h2>Inicializar el proyecto</h2>
           <pre class="ionic-blue">
-            <code class="fragment">$ ionic start myapp sidemenu</code>
-            <code class="fragment">$ cd myapp</code>
+            <code class="fragment">$ ionic start jsconfuy sidemenu</code>
+            <code class="fragment">$ cd jsconfuy</code>
+            <code class="fragment">$ ionic setup sass</code>
             <code class="fragment">$ ionic serve</code>
           </pre>
 
@@ -630,7 +631,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
 ├── platforms      // donde van a estar los builds de iOS/Android respectivamente
 ├── plugins        // donde se van a instalar los plugins de cordova/ionic
 ├── scss           // código sass
-└── www            // aplicación - JS, libs, CSS, imágenes, etc.
+└── www            // aplicación - JS, HTML, libs, CSS, imágenes, etc.
 </code></pre>
         </section>
 
@@ -642,8 +643,8 @@ $ionicModal.fromTemplateUrl('modal.html', {
           - Vamos a agregar un poco mas de usabilidad a la app, por ej si estamos en la bio del speaker, a mi me interesa saber en que tiene experiencia y que charlas va a dar hoy, por eso decidimos agregar bla bla
           - Ir a atom y mostrar el app.js
           //////////////////////////  -->
-          <h2>Navegación</h2>
-          <img src="img/navigation.png" style="height:780px; border:none; box-shadow:none; background:none;"/>
+          <h3>Navegación</h3>
+          <img src="img/navigation.png" style="height:600px; border:none; box-shadow:none; background:none;"/>
         </section>
 
         <section>
@@ -655,8 +656,8 @@ $ionicModal.fromTemplateUrl('modal.html', {
           <h2>Layout Speakers</h2>
           <ul>
             <li>Mostrar listado de speakers de la conf</li>
-            <li>Skills de cada speaker</li>
-            <li>Link a charlas del speaker</li>
+            <li>Link a charla del speaker</li>
+            <li>Link a perfiles sociales</li>
           </ul>
           <br/>
           <br/>
@@ -669,16 +670,15 @@ $ionicModal.fromTemplateUrl('modal.html', {
           NOTAS
           - Mostrar los componentes UI de Ionic que usamos para esta view
           - Alternar entre Atom y las slides para mostrar como es la estructura en Codigo.
+          - usamos una directiva de angular que se llama ng-maps: http://willleahy.info/ng-maps/#/
           //////////////////////////  -->
           <h2>Layout Venue</h2>
           <ul>
-            <li>Donde es la conferencia?</li>
-            <li>Como llego?</li>
+            <li>Dónde es la conferencia?</li>
           </ul>
           <br/>
           <br/>
           <br/>
-          <h3 class="fragment">Using google maps</h3>
         </section>
 
         <section>
@@ -689,7 +689,7 @@ $ionicModal.fromTemplateUrl('modal.html', {
           //////////////////////////  -->
           <h2>Layout Agenda</h2>
           <ul>
-            <li>Horarios y duracion de los eventos de ambos dias</li>
+            <li>Horarios y duración de los eventos de ambos dias</li>
             <li>Info de los eventos</li>
           </ul>
           <br/>
@@ -701,12 +701,13 @@ $ionicModal.fromTemplateUrl('modal.html', {
         <section>
           <!-- //////////////////////////
           NOTAS
-          - El acceso a datos lo vamos a hacer de la misma forma que lo hariamos en una aplicacion Angular, ya sea atravez de $resource, $http, etc.
+          - El acceso a datos lo vamos a hacer de la misma forma que lo hariamos en una aplicacion Angular, ya sea a traves de $resource, $http, etc.
           - En este caso la data la vamos a sacar de un json local pero perfectamente podriamos estar interactuando con nuestra API del backend.
           - Mostrar en atom este codigo
           //////////////////////////  -->
           <h2>Acceso a datos</h2>
           <ul>
+            <li>Usando controllers y servicios de angular</li>
             <li>$resource, $http</li>
             <li>Backend API, local json, BaaS (parse, firebase), etc</li>
           </ul>
@@ -717,13 +718,17 @@ $ionicModal.fromTemplateUrl('modal.html', {
         <section>
           <!-- //////////////////////////
           NOTAS
-          - Cordova plugins (local notifications, get directions, share)
+          - Cordova plugins
           //////////////////////////  -->
-          <h2>Super poderes</h2>
+          <h2>Cordova plugins & more</h2>
           <ul>
-            <li>Get directions</li>
             <li>Social share</li>
-            <li>Local notifications</li>
+            <li>inAppBrowser</li>
+            <li>Ionic UX components</li>
+            <ul>
+              <li>loader</li>
+              <li>slidebox</li>
+            </ul>
           </ul>
         </section>
 
