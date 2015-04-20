@@ -1,7 +1,6 @@
 Presentación de Ionic Framework
 =============
-
-[Start the presentation](http://djabif.github.io/starting-with-ionic/)
+[Start the presentation](http://startapplabs.github.io/starting-with-ionic/)
 
 Ionic resources
 
